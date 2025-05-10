@@ -1,0 +1,4 @@
+config.py
+OpenAI/
+myenv/
+__pycache__/
