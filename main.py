@@ -167,13 +167,14 @@ if __name__ == "__main__":
             ai(prompt=query)
             
         elif "Jarvis Quit".lower() in query.lower():
-            say("Goodbye!")
+            say("Goodbye! Call me if you need anything.")
             break
         
         elif "reset chat".lower() in query.lower():
             chatStr = ""
             say("Chat reset")
         
-        else:
+        elif "chat".lower() in query.lower():
+            say("Chatting with you")
             print("Chatting..")
             chat(query)
